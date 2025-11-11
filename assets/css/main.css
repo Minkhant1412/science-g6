@@ -927,7 +927,7 @@ section,
 .section-title p {
   color: var(--accent-color);
   margin: 0;
-  font-size: 36px;
+  font-size: 25px;
   font-weight: 600;
   font-family: var(--heading-font);
 }
@@ -971,7 +971,7 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 48px;
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -1027,15 +1027,16 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/school2.jpg") center center;
+  /* background: url("../img/background.jpeg") left bottom;
   background-size: cover;
-  position: relative;
+  position: relative; */
+  /* background-color: rgba(40, 40, 78, 0.626); */
   padding: 80px 0;
 }
 
 .about:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 12%);
+  background: color-mix(in srgb, var(--background-color), transparent 60%);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1100,7 +1101,7 @@ section,
 .why-us .card-item span {
   color: var(--accent-color);
   display: block;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
 }
 
