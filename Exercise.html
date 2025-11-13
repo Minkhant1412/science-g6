@@ -34,27 +34,54 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+  .quiz-box {
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+  }
+  h2 { color: var(--accent-color); }
+
+  .option {
+    display: block;
+    background: 
+ color-mix(in srgb, var(--default-color), transparent 95%);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+
+  .option:hover {
+    background: var(--accent-color);
+  }
+
+  .option.selected {
+    background: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+  }
+
+  button {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover { background: var(--accent-color); }
+</style>
+
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header fixed-top">
-
-    <!-- <div class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
-        </div>
-        <div class="languages d-none d-md-flex align-items-center">
-          <ul>
-            <li>En</li>
-            <li><a href="#">De</a></li>
-          </ul>
-        </div>
-      </div>
-    </div> -->
-    <!-- End Top Bar -->
 
     <div class="branding d-flex align-items-cente">
 
@@ -62,26 +89,18 @@
         <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Science</h1>
+          <h1 class="sitename">Grade 9 (သိပ္ပံ)</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html" >Home<br></a></li>
+            <li><a href="#hero" class="active">Home<br></a></li>
             <li><a href="about.html">About</a></li>
             <!-- <li><a href="subject.html">Subject</a></li> -->
             <li class="dropdown"><a href="#"><span>ဘာသာရပ်များ</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="MainShells-or-Orbits.html" class="active">အဓီကအခွံ (ပတ်လမ်း)များ</a></li>
-                <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li> -->
+                <li><a href="MainShells-or-Orbits.html">အဓီကအခွံ (ပတ်လမ်း)များ</a></li>
+                
                 <li><a href="ElectronicStructures.html">အီလက်ထရွန်ဖွဲ့တည်ပုံများ</a></li>
                 <li><a href="CombiningCapacity-or-Valence.html">ပေါင်းစည်းကိန်း</a></li>
               </ul>
@@ -96,7 +115,7 @@
               </ul>
             </li>
             <li><a href="Reference.html">Reference</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Exercises</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -110,65 +129,18 @@
   </header>
 
   <main class="main">
-<!-- Hero Section -->
-    <section id="hero" class="hero section dark-background" style="min-height: 50vh;">
-
-      <img src="assets/img/school2.jpg" alt="" data-aos="fade-in">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 d-flex flex-column align-items-center align-items-lg-start">
-            <h2 data-aos="fade-up" data-aos-delay="100">လုပ်ငန်းစဉ် (၄)</h2>
-            
-          </div>
+    <section class="mt-5">
+        <div class="quiz-box">
+            <h2 id="question">Loading...</h2>
+            <div id="options"></div>
+            <button id="nextBtn">Next</button>
+            <p id="score"></p>
         </div>
-      </div>
-
-    </section><!-- /Hero Section -->
-    <!-- Why Us Section -->
-    <!-- <section id="why-us" class="why-us section mt-5">
-      <div class="container section-title text-center" data-aos="fade-up">
-      <div class="d-flex justify-content-center mb-4">
-        <img src="assets/img/Dagon1.png" class="academic-logo" alt="" style="width: 70px;margin-right: 20px;">
-        <p>2025-2026 Academic Year</p>
-        <img src="assets/img/MCF.png" class="academic-logo" alt="" style="width: 70px;margin-left: 20px;">
-      </div>
-        <span>National ICT Award-2025 (Educational Project and Skills Competition)</span><br>
-        <span>(1) Basic Education Hight School, Dagon </span><br>
-        <span>Unit-1, Lesson-1</span>
-      </div>
-    </section> -->
-    <!-- /Why Us Section -->
-    
-    <section>
-        <h2 class="text-center">လုပ်ငန်းစဉ် (၄)</h2>
-        <div class="container mt-4">
-            <ul>
-                <li>အောက်ဖော်ပြပါဒြပ်စင်အက်တမ်များ၏ ပရိုတွန်၊ နျူထရွန်နှင့် အီလက်ထရွန်အရေအတွက်များ ကိုဖော်ပြပြီး ယင်းတို့၏ အီလက်ထရွန်ဖွဲ့တည်ပုံကို ပုံဖြင့်ဖော်ပြပါ။</li>
-                
-            </ul>
-            <span class="me-5 ms-4"><sup>27</sup><sub>13</sub>Al</span> <span class="me-5"><sup>31</sup><sub>15</sub>P </span>
-            <span><sup>40</sup><sub>18</sub>Ar </span>
-        </div>
-        <div class="text-center">
-            <img src="assets/img/Picture4.png" alt="" class="text-center img-fluid">
-        </div>
-        <div class="container mt-4">
-            <ul>
-                <li>ဗယ်ရီလီယမ်အက်တမ်တွင် အီလက်ထရွန် ၄ လုံးရှိရာ အီလက်ထရွန်ပတ်လမ်း 1 တွင် အီလက်ထရွန် ၂ လုံးလှည့်ပတ်နေပြီး ကျန်အီလက်ထရွန် ၂ လုံးသည် ပတ်လမ်း 2တွင် လှည့်ပတ်နေသည်။</li>
-                <li>အလှည့်ကျဇယားကိုအသုံးပြုပြီး အုပ်စုများဖွဲ့၍ အောက်ပါဇယားကို ဖြည့်စွတ်ပါ။</li>
-            </ul>
-        </div>
-        
     </section>
     
-
   </main>
 
   <footer id="footer" class="footer">
-
-    
-
     <div class="container copyright text-center mt-4">
       <div class="social-links d-flex mt-4 mb-4 text-center justify-content-center">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -176,17 +148,65 @@
             <a href=""><i class="bi bi-instagram"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
           </div>
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Grade10</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">PK</a> Distributed by <a href="https://themewagon.com" target="_blank">PK</a>
-      </div>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Grade9 </strong> <span>All Rights Reserved</span></p>
+      
     </div>
 
   </footer>
+
+  <script>
+const quiz = [
+  { q: "What is the capital of France?", options: ["Paris", "London", "Berlin", "Madrid"], answer: 0 },
+  { q: "2 + 2 = ?", options: ["3", "4", "5", "6"], answer: 1 },
+  { q: "Which is a JavaScript framework?", options: ["React", "Django", "Laravel", "Spring"], answer: 0 },
+];
+
+let current = 0;
+let score = 0;
+
+function loadQuestion() {
+  const question = quiz[current];
+  document.getElementById("question").textContent = question.q;
+  const optionsContainer = document.getElementById("options");
+  optionsContainer.innerHTML = "";
+  question.options.forEach((opt, i) => {
+    const div = document.createElement("div");
+    div.textContent = opt;
+    div.className = "option";
+    div.onclick = () => selectOption(div, i);
+    optionsContainer.appendChild(div);
+  });
+  document.getElementById("nextBtn").style.display = "none";
+}
+
+function selectOption(selectedDiv, i) {
+  // Remove 'selected' from all options
+  document.querySelectorAll(".option").forEach(opt => opt.classList.remove("selected"));
+
+  // Add 'selected' class to clicked one
+  selectedDiv.classList.add("selected");
+
+  // Check the answer
+  if (i === quiz[current].answer) score++;
+
+  // Show next button
+  document.getElementById("nextBtn").style.display = "block";
+}
+
+document.getElementById("nextBtn").onclick = () => {
+  current++;
+  if (current < quiz.length) {
+    loadQuestion();
+  } else {
+    document.getElementById("question").textContent = "Quiz Finished!";
+    document.getElementById("options").innerHTML = "";
+    document.getElementById("nextBtn").style.display = "none";
+    document.getElementById("score").textContent = `Your score: ${score}/${quiz.length}`;
+  }
+};
+
+loadQuestion();
+</script>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
